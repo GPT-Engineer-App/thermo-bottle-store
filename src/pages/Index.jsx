@@ -26,7 +26,7 @@ const Index = () => {
   };
 
   return (
-    <Box maxWidth="960px" margin="auto" padding={4}>
+    <Box maxWidth="960px" margin="auto" padding={{ base: 2, md: 4 }}>
       <Flex align="center" marginBottom={8}>
         <Heading as="h1" size="xl">
           Thermostore
@@ -38,8 +38,8 @@ const Index = () => {
         </Badge>
       </Flex>
 
-      <Box borderWidth={1} borderRadius="lg" padding={8}>
-        <Image src={product.image} alt={product.name} marginBottom={8} />
+      <Box borderWidth={1} borderRadius="lg" padding={{ base: 4, md: 8 }}>
+        <Image src={product.image} alt={product.name} marginBottom={{ base: 4, md: 8 }} objectFit="cover" width="100%" />
         <Heading as="h2" size="xl" marginBottom={4}>
           {product.name}
         </Heading>
@@ -51,7 +51,7 @@ const Index = () => {
             ${product.price.toFixed(2)}
           </Text>
           <Spacer />
-          <Button colorScheme="blue" size="lg" onClick={() => addToCart(product)}>
+          <Button colorScheme="blue" size={{ base: "md", md: "lg" }} width={{ base: "100%", md: "auto" }} onClick={() => addToCart(product)}>
             Add to Cart
           </Button>
         </Flex>
