@@ -28,7 +28,7 @@ const Index = () => {
   return (
     <>
       <Box bg="black" width="100%" height="50px"></Box>
-      <Box bg="black" padding={4}>
+      <Box bg="black" padding={4} height="100px">
         <Heading as="h1" size="2xl" color="white" textAlign="center">
           DThermoshop
         </Heading>
