@@ -33,6 +33,11 @@ const Index = () => {
           DThermoshop
         </Heading>
       </Box>
+      <Box bg="black" padding={4}>
+        <Heading as="h1" size="2xl" color="white" textAlign="center">
+          DThermoshop
+        </Heading>
+      </Box>
       <Box maxWidth="960px" margin="auto" padding={{ base: 2, md: 4 }}>
         <Flex align="center" marginBottom={4}>
           <Spacer />
