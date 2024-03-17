@@ -45,7 +45,7 @@ const Index = () => {
     <Box maxWidth="960px" margin="auto" padding={4}>
       <Flex align="center" marginBottom={8}>
         <Heading as="h1" size="xl">
-          Thermo Bottle Store
+          Thermostore
         </Heading>
         <Spacer />
         <IconButton icon={<FaShoppingCart />} variant="outline" aria-label="Shopping Cart" />
