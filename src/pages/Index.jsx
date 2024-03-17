@@ -29,8 +29,8 @@ const Index = () => {
     <>
       <Box bg="black" width="100%" height="50px"></Box>
       <Box bg="black" padding={4}>
-        <Heading as="h1" size="xl" color="white" textAlign="center">
-          Thermostore
+        <Heading as="h1" size="2xl" color="white" textAlign="center">
+          DThermoshop
         </Heading>
       </Box>
       <Box maxWidth="960px" margin="auto" padding={{ base: 2, md: 4 }}>
