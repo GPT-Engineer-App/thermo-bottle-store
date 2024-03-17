@@ -26,37 +26,42 @@ const Index = () => {
   };
 
   return (
-    <Box maxWidth="960px" margin="auto" padding={{ base: 2, md: 4 }}>
-      <Flex align="center" marginBottom={8}>
-        <Heading as="h1" size="xl">
+    <>
+      <Box bg="black" width="100%" height="50px"></Box>
+      <Box bg="black" padding={4}>
+        <Heading as="h1" size="xl" color="white" textAlign="center">
           Thermostore
         </Heading>
-        <Spacer />
-        <IconButton icon={<FaShoppingCart />} variant="outline" aria-label="Shopping Cart" />
-        <Badge marginLeft={2} colorScheme="blue">
-          {cart.length}
-        </Badge>
-      </Flex>
-
-      <Box borderWidth={1} borderRadius="lg" padding={4}>
-        <Image src={product.image} alt={product.name} marginBottom={{ base: 4, md: 8 }} objectFit="cover" width="100%" />
-        <Heading as="h2" size="xl" marginBottom={4}>
-          {product.name}
-        </Heading>
-        <Text fontSize="xl" marginBottom={8}>
-          {product.description}
-        </Text>
-        <Flex align="center">
-          <Text fontWeight="bold" fontSize="2xl">
-            ${product.price.toFixed(2)}
-          </Text>
-          <Spacer />
-          <Button colorScheme="blue" size="md" width="100%" onClick={() => addToCart(product)}>
-            Add to Cart
-          </Button>
-        </Flex>
       </Box>
-    </Box>
+      <Box maxWidth="960px" margin="auto" padding={{ base: 2, md: 4 }}>
+        <Flex align="center" marginBottom={4}>
+          <Spacer />
+          <IconButton icon={<FaShoppingCart />} variant="outline" aria-label="Shopping Cart" />
+          <Badge marginLeft={2} colorScheme="blue">
+            {cart.length}
+          </Badge>
+        </Flex>
+
+        <Box borderWidth={1} borderRadius="lg" padding={4}>
+          <Image src={product.image} alt={product.name} marginBottom={{ base: 4, md: 8 }} objectFit="cover" width="100%" />
+          <Heading as="h2" size="xl" marginBottom={4}>
+            {product.name}
+          </Heading>
+          <Text fontSize="xl" marginBottom={8}>
+            {product.description}
+          </Text>
+          <Flex align="center">
+            <Text fontWeight="bold" fontSize="2xl">
+              ${product.price.toFixed(2)}
+            </Text>
+            <Spacer />
+            <Button colorScheme="blue" size="md" width="100%" onClick={() => addToCart(product)}>
+              Add to Cart
+            </Button>
+          </Flex>
+        </Box>
+      </Box>
+    </>
   );
 };
 
